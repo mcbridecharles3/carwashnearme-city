@@ -152,109 +152,208 @@
 
     <!-- Cities List Start -->
     <section class="pq-choose-us pq-bg-dark p-0">
+        <style>
+            /* Button style override */
+            .pq-button {
+                background-color: #d32f2f;
+                /* Bold red */
+                color: white !important;
+                font-weight: 700;
+                text-transform: uppercase;
+                border-radius: 6px;
+                padding: 14px 0;
+                transition: background-color 0.3s ease;
+                box-shadow: 0 4px 8px rgba(211, 47, 47, 0.4);
+                font-size: 1.1rem;
+                letter-spacing: 0.05em;
+                display: inline-block;
+            }
+    
+            .pq-button:hover,
+            .pq-button:focus {
+                background-color: #b71c1c;
+                /* Darker red on hover */
+                text-decoration: none;
+                box-shadow: 0 6px 12px rgba(183, 28, 28, 0.6);
+            }
+        </style>
+    
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-12 text-center mb-4">
                     <h2 class="pq-section-main-title pq-text-white">Browse Car Washes by City in Missouri</h2>
-                    <p class="pq-section-description pq-text-white">Choose your city below to find trusted & top rated car
-                        washes,
-                        detailing shops, and mobile pros near you.</p>
+                    <p class="pq-section-description pq-text-white">
+                        Choose your city below to find trusted &amp; top rated car washes, detailing shops, and mobile pros
+                        near you.
+                    </p>
                 </div>
             </div>
-            <div class="row justify-content-center text-center">
-                <div class="col-md-3 col-6 mb-3">
+            <div class="row justify-content-center text-center g-3">
+                <div class="col-md-3 col-6">
                     <a href="flint-mi.html" class="pq-button w-100">Flint</a>
                 </div>
-            </div>
-            <div class="row justify-content-center text-center">
-                <div class="col-md-3 col-6 mb-3">
+                <div class="col-md-3 col-6">
                     <a href="howell-mi.html" class="pq-button w-100">Howell</a>
                 </div>
-            </div>
-            <div class="row justify-content-center text-center">
-                <div class="col-md-3 col-6 mb-3">
+                <div class="col-md-3 col-6">
                     <a href="pinckney-mi.html" class="pq-button w-100">Pinckney</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- Cities List End -->
+  
 
     <!-- Michigan State Car Wash Directory Page -->
-    <section class="state-intro py-5">
-        <div class="container">
+    <section class="state-intro py-5 position-relative" style="background: #0b3d91; color: #f0f8ff; overflow: hidden;">
+        <style>
+            /* Soap bubbles background effect */
+            .state-intro::before {
+                content: "";
+                position: absolute;
+                top: -50px;
+                left: -50px;
+                right: -50px;
+                bottom: -50px;
+                background: radial-gradient(circle at 20% 30%, rgba(255 255 255 / 0.15) 0%, transparent 60%),
+                    radial-gradient(circle at 80% 70%, rgba(255 255 255 / 0.1) 0%, transparent 60%);
+                background-repeat: no-repeat;
+                background-size: 150px 150px;
+                animation: bubble-move 15s linear infinite;
+                z-index: 0;
+                pointer-events: none;
+                filter: blur(8px);
+            }
+    
+            @keyframes bubble-move {
+                0% {
+                    background-position: 20% 30%, 80% 70%;
+                }
+    
+                50% {
+                    background-position: 25% 40%, 85% 75%;
+                }
+    
+                100% {
+                    background-position: 20% 30%, 80% 70%;
+                }
+            }
+    
+            /* Remove default bullets */
+            .state-intro ul {
+                list-style: none;
+                padding-left: 0;
+                margin-bottom: 1.5rem;
+                position: relative;
+                z-index: 1;
+            }
+    
+            /* Custom icon (soap bubble) style for list items */
+            .state-intro ul li {
+                position: relative;
+                padding-left: 2.5rem;
+                margin-bottom: 1rem;
+                font-size: 1.1rem;
+                line-height: 1.4;
+            }
+    
+            /* Soap bubble icon on left */
+            .state-intro ul li::before {
+                content: "🧼";
+                /* soap bar emoji, can swap to bubbles */
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 1.8rem;
+                color: #e0f7fa;
+                /* bright cyan */
+                filter: drop-shadow(0 0 2px #4dd0e1);
+                transform: translateY(2px);
+            }
+    
+            /* Heading color tweaks */
+            .state-intro h1,
+            .state-intro h2 {
+                color: #ffffff;
+                text-shadow: 0 0 8px #1976d2;
+            }
+    
+            /* Paragraph styling */
+            .state-intro p.lead {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: #bbdefb;
+            }
+    
+            .state-intro p {
+                color: #dbe9fb;
+            }
+        </style>
+    
+        <div class="container position-relative" style="z-index: 2;">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-10">
-                    <h1 class="pq-section-title mb-4">Find Car Washes and Auto Detailers in Michigan</h1>
+                    <h1 class="pq-section-title mb-4">Find Trusted Car Washes & Auto Detailers in Michigan</h1>
+    
                     <p class="lead">
-                        Listen up, Michigan drivers—your <strong>car wash near me search just ended</strong>. Yes, really.
-                        Stop scrolling, stop Googling, and start shining. Whether you're cruising the Great Lakes State in
-                        Detroit, navigating the motor city hustle, or enjoying the Upper Peninsula’s rugged beauty,
-                        CarWashNearMe.City has your back with the best local car washes and detailers ready to make your
-                        ride sparkle like fresh snow on a chilly winter morning.
+                        Hey Michigan drivers, your <strong>“car wash near me” search ends here.</strong> No more endless
+                        scrolling or guessing. Whether you’re cruising Detroit’s streets, navigating Motor City hustle, or
+                        enjoying the Upper Peninsula’s scenic routes,
+                        <strong>CarWashNearMe.City</strong> connects you to the best local car washes and detailers ready to
+                        make your ride shine like fresh snow on a chilly morning.
                     </p>
     
                     <p>
-                        Michigan’s roads are no joke—between salt from winter storms, summer pollen, and the occasional
-                        splash of Lake Michigan mist, your car needs some serious TLC. Lucky for you, our directory is
-                        packed with everything from <strong>touchless washes</strong> that keep your paint flawless, to
-                        <strong>hand detailing pros</strong> who treat your ride like a vintage muscle car.
+                        Michigan roads are tough on vehicles—winter salt, summer pollen, and that Lake Michigan mist demand
+                        serious care. That’s why our directory features everything from <strong>paint-protecting touchless
+                            washes</strong> to expert <strong>hand detailing pros</strong> who treat your car like a
+                        classic.
                     </p>
     
-                    <h2 class="mt-5">Why Michigan Drivers Say “Game Over” to Their Car Wash Search Here</h2>
-                    <ul class="text-start mt-3">
-                        <li>🎯 City-by-city listings for quick local discovery (because ain’t nobody got time to drive all
-                            over)</li>
-                        <li>🌟 Real customer reviews to separate the “meh” from the “heck yeah!”</li>
-                        <li>📱 Mobile-friendly design so you can book a wash from the coffee line</li>
-                        <li>♻️ Listings spotlighting eco-friendly washes that care for the environment as much as your car
-                        </li>
+                    <h2 class="mt-5">Why Michigan Drivers Trust Us to End Their Car Wash Search</h2>
+                    <ul>
+                        <li>🎯 Comprehensive city-by-city listings to find the closest and best spots fast</li>
+                        <li>🌟 Real customer reviews help you spot the “meh” versus the “heck yes!”</li>
+                        <li>📱 Mobile-friendly design lets you book a wash anytime, anywhere</li>
+                        <li>♻️ Eco-friendly options that care for Michigan’s environment and your car</li>
                     </ul>
     
-                    <h2 class="mt-5">Michigan’s Car Wash & Detailing Hits — What You Really Need</h2>
-                    <p>We’re talking:</p>
+                    <h2 class="mt-5">Michigan’s Must-Have Car Wash & Detailing Services</h2>
                     <ul>
-                        <li><strong>Express tunnel washes</strong> that get you clean and out the door faster than you can
-                            say “Go Blue!”</li>
-                        <li><strong>Full-service detailing</strong> for those who want their ride looking showroom ready,
-                            all year long</li>
-                        <li><strong>Undercarriage cleaning</strong> — because salt is the enemy and we’re here to fight it
-                        </li>
-                        <li><strong>Mobile detailers</strong> who bring the sparkle to your driveway (because hey,
-                            convenience matters)</li>
+                        <li><strong>Express tunnel washes</strong> that clean your car fast and flawless</li>
+                        <li><strong>Full-service detailing</strong> to keep your ride showroom-ready all year</li>
+                        <li><strong>Undercarriage cleaning</strong> to battle Michigan’s salt and road grime</li>
+                        <li><strong>Mobile detailers</strong> who bring professional shine right to your doorstep</li>
                     </ul>
     
-                    <h2 class="mt-5">Pro Tips for Michigan Car Care</h2>
+                    <h2 class="mt-5">Top Tips for Keeping Your Michigan Car Looking Its Best</h2>
                     <ul>
-                        <li>Winter is brutal: Schedule regular washes to keep salt from rusting your pride and joy.</li>
-                        <li>Summer? Time to show off that shine—frequent washes keep pollen and bugs at bay.</li>
-                        <li>Eco-conscious? Check for green-certified car washes that save water and the planet.</li>
-                        <li>Looking for deals? Watch for seasonal specials and loyalty programs in our listings.</li>
+                        <li>Winter is harsh — schedule regular washes to prevent salt damage and rust</li>
+                        <li>Summer shines best with frequent washes to keep pollen and bugs off</li>
+                        <li>Choose green-certified washes to protect both your car and Michigan’s lakes</li>
+                        <li>Keep an eye out for seasonal deals and loyalty programs to save big</li>
                     </ul>
     
-                    <h2 class="mt-5">Frequently Asked Questions — Michigan Edition</h2>
+                    <h2 class="mt-5">FAQs — Michigan Car Care Essentials</h2>
                     <ul>
-                        <li><strong>Can ceramic coating really protect against salt and grime?</strong><br>Absolutely. It’s
-                            like armor for your car’s paint, essential for Michigan winters.</li>
-                        <li><strong>Are there mobile car detailing services in Michigan?</strong><br>You bet! We list
-                            trusted detailers who come to your home or office.</li>
-                        <li><strong>What’s the best way to keep my car looking good all year?</strong><br>Regular washing,
-                            seasonal detailing, and a good wax or ceramic coating will keep you covered.</li>
+                        <li><strong>Does ceramic coating really protect against salt and grime?</strong> Absolutely. It’s a
+                            durable shield against winter damage that keeps your paint pristine.</li>
+                        <li><strong>Are mobile detailing services available in Michigan?</strong> Yes! Trusted pros come to
+                            your home or office for ultimate convenience.</li>
+                        <li><strong>How can you keep your car looking great year-round?</strong> Regular washes, seasonal
+                            detailing, and quality wax or ceramic coatings are key.</li>
                     </ul>
     
                     <p class="mt-4">
-                        So yeah, your <strong>car wash near me search just ended</strong>. Time to stop wondering and start
-                        booking. Head over to CarWashNearMe.City — Michigan’s ultimate guide to clean, shiny rides and happy
-                        drivers. Browse by city, read honest reviews, and get your car the care it deserves today!
+                        So, your <strong>car wash near me search is officially over.</strong> Don’t wait—start booking
+                        today. Visit <strong>CarWashNearMe.City</strong>, Michigan’s go-to directory for spotless rides and
+                        happy drivers. Browse by city, read honest reviews, and get the care your car deserves.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Michigan Car Wash Directory Intro Section -->
-
-
-    
+    <!-- End Michigan Car Wash Directory Intro Section -->    
 
     <!-- footer start -->
     <footer class="pq-footer pq-bg-dark">
