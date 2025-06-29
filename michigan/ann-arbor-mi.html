@@ -79,6 +79,62 @@
           {
             "@context": "https://schema.org",
             "@graph": [
+            {
+              "@context": "https://schema.org",
+              "@type": "CarWash",
+              "name": "Big M Car Wash",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "2151 W Stadium Blvd",
+                "addressLocality": "Ann Arbor",
+                "addressRegion": "MI",
+                "postalCode": "48103"
+              },
+              "telephone": "+1-734-994-3988",
+              "url": "https://www.mapquest.com/us/michigan/big-m-car-wash-435570978"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "CarWash",
+              "name": "Community Auto Wash",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1910 S Industrial Hwy",
+                "addressLocality": "Ann Arbor",
+                "addressRegion": "MI",
+                "postalCode": "48104"
+              },
+              "telephone": "+1-734-769-2395",
+              "url": "https://www.communityautowash.net/"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "AutoRepair",
+              "name": "ArborMotion / Total Detail",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "669 State Circle",
+                "addressLocality": "Ann Arbor",
+                "addressRegion": "MI",
+                "postalCode": "48108"
+              },
+              "telephone": "+1-734-761-1088",
+              "url": "https://www.arbormotion.com/services/detailing"
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "AutoDetailing",
+              "name": "Mo’s Auto Detailing",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Mobile Service",
+                "addressLocality": "Ann Arbor",
+                "addressRegion": "MI",
+                "postalCode": ""
+              },
+              "telephone": "+1-734-592-1032",
+              "url": "https://www.mosautodetailing.com/"
+              },
               {
                 "@type": "LocalBusiness",
                 "name": "Mister Car Wash",
@@ -690,6 +746,56 @@
       <div class="container">
         <h2 class="text-center mb-5 text-primary">Top Car Washes & Auto Detailers in Michigan</h2>
         
+            <!-- Big M Car Wash -->
+            <div class="col-md-12 mb-4">
+              <div class="pq-fancy-box pq-style-1 border p-4 bg-light shadow-sm">
+                <h3 class="pq-fancy-box-title mb-1 text-dark">Big M Car Wash</h3>
+                <p class="text-muted fw-semibold mb-2">2151 W Stadium Blvd, Ann Arbor, MI 48103 | <a href="tel:+17349943988">(734)
+                    994-3988</a></p>
+                <p><strong>Type:</strong> Self-Service / Tunnel Wash</p>
+                <p>Locally trusted spot with self-service bays and affordable tunnel wash options.</p>
+                <a href="https://www.mapquest.com/us/michigan/big-m-car-wash-435570978" target="_blank"
+                  class="btn btn-sm btn-primary mt-2">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- Community Auto Wash of Ann Arbor -->
+            <div class="col-md-12 mb-4">
+              <div class="pq-fancy-box pq-style-1 border p-4 bg-light shadow-sm">
+                <h3 class="pq-fancy-box-title mb-1 text-dark">Community Auto Wash</h3>
+                <p class="text-muted fw-semibold mb-2">1910 S Industrial Hwy, Ann Arbor, MI 48104 | <a href="tel:+17347692395">(734)
+                    769-2395</a></p>
+                <p><strong>Type:</strong> Full-Service Car Wash</p>
+                <p>Family-owned, reliable full-service and express wash options with a loyal customer base.</p>
+                <a href="https://www.communityautowash.net/" target="_blank" class="btn btn-sm btn-primary mt-2">Visit Website</a>
+              </div>
+            </div>
+            
+            <!-- ArborMotion / Total Detail -->
+            <div class="col-md-12 mb-4">
+              <div class="pq-fancy-box pq-style-1 border p-4 bg-light shadow-sm">
+                <h3 class="pq-fancy-box-title mb-1 text-dark">ArborMotion / Total Detail</h3>
+                <p class="text-muted fw-semibold mb-2">669 State Circle, Ann Arbor, MI 48108 | <a href="tel:+17347611088">(734)
+                    761-1088</a></p>
+                <p><strong>Type:</strong> Professional Auto Detailing</p>
+                <p>High-end detailing services including ceramic coating and paint correction for enthusiasts.</p>
+                <a href="https://www.arbormotion.com/services/detailing" target="_blank" class="btn btn-sm btn-primary mt-2">Visit
+                  Website</a>
+              </div>
+            </div>
+            
+            <!-- Mo’s Auto Detailing -->
+            <div class="col-md-12 mb-4">
+              <div class="pq-fancy-box pq-style-1 border p-4 bg-light shadow-sm">
+                <h3 class="pq-fancy-box-title mb-1 text-dark">Mo’s Auto Detailing</h3>
+                <p class="text-muted fw-semibold mb-2">Mobile Service – Ann Arbor, MI | <a href="tel:+17345921032">(734)
+                    592-1032</a></p>
+                <p><strong>Type:</strong> Mobile Detailing</p>
+                <p>Trusted mobile detailer known for convenience, quality, and flexible appointments across Ann Arbor.</p>
+                <a href="https://www.mosautodetailing.com/" target="_blank" class="btn btn-sm btn-primary mt-2">Visit Website</a>
+              </div>
+            </div>    
+
             <!-- Mister Car Wash -->
             <div class="col-md-12 mb-4">
               <div class="pq-fancy-box pq-style-1 border p-4 bg-light shadow-sm">
@@ -1142,42 +1248,44 @@
     <section class="py-5 bg-white position-relative" style="background: #e0f7fa;">
       <div class="container position-relative" style="z-index: 10;">
         <h2 class="text-center mb-5 text-primary" style="font-weight: 700; text-shadow: 1px 1px 3px #82cfd2;">
-          🚗✨ Top Car Washes & Auto Detailing in Ann Arbor, MI ✨🧼
+          🚗✨ Car Wash Near Me Search Just Ended in Ann Arbor, MI ✨🧼
         </h2>
     
         <p class="mb-4 fs-5" style="color: #00796b; font-weight: 600;">
-          Searching for a <strong>car wash near me</strong> in Ann Arbor? Stop scrubbing your screen — you found the
-          ultimate
-          spot! Whether your ride needs a speedy rinse or a royal treatment with <em>foam cannons</em> and <em>ceramic
-            coating</em>,
-          Ann Arbor's car wash pros have got your back.
+          If you're looking for a <strong>car wash near me</strong> in Ann Arbor, MI — your search just ended. This
+          directory connects you with local experts in auto detailing, interior cleaning, and paint protection. We've got
+          everything from touchless tunnel washes to high-end ceramic coatings.
         </p>
     
         <p class="mb-4 fs-5" style="color: #004d40;">
-          From self-serve bays where you’re the boss to full-service detailing that pampers your vehicle like a VIP,
-          these local car washes deliver sparkling clean results that turn heads. Expect top-notch washes, interior scrubs,
-          paint protection, and even engine bay cleaning — because your car deserves a spa day too.
+          Whether you're rolling through Washtenaw Ave, cruising past the Big House, or just ran errands on Stadium Blvd,
+          there's a perfect car wash waiting for you nearby. Ann Arbor's top car washes and detailers offer unbeatable
+          convenience, value, and care.
         </p>
     
         <p class="mb-4 fs-5" style="color: #00796b; font-weight: 600;">
-          Pro tip: Michigan winters throw salt and sludge at your car like it’s dodgeball season. Don’t let rust sneak up on
-          you — opt for a wash with thorough <strong>undercarriage rinses</strong> and shield your paint with expert
-          coatings.
+          Pro tip: Michigan winters hit hard. Salt, snow, and grime can damage your car's finish fast — so opt for
+          undercarriage rinses, wax sealants, or ceramic coatings to keep your ride protected year-round.
         </p>
     
         <p class="mb-4 fs-5" style="color: #004d40;">
-          Bonus! Ann Arbor’s close to Brighton, South Lyon, and Ypsilanti — so you’ve got plenty of options to keep your car
-          shining bright no matter where the road takes you. No excuses, just squeaky clean rides.
+          Not sure what to ask? When choosing a detailer, ask about:
+        <ul>
+          <li>🧽 What packages include interior steam cleaning?</li>
+          <li>💧 Do they offer paint correction or ceramic coating?</li>
+          <li>🚙 Do they have mobile detailing or pickup options?</li>
+        </ul>
+        First timer? Start with an express wash and vacuum, then upgrade once you find your go-to shop.
         </p>
     
         <p class="mb-4 fs-5" style="color: #00796b; font-weight: 600;">
-          Ready to roll with a fresh shine? Dive into our trusted list of car washes and detailers. Whether you want a quick
-          express wash, a deep interior makeover, or a long-lasting ceramic coat, we’ve got the scoop on the best in town.
+          Bonus! Ann Arbor is close to Brighton, South Lyon, Ypsilanti, and Whitmore Lake — meaning more options are just a
+          short drive away. So if you’re nearby and still typing “car wash near me,” your search officially ends here.
         </p>
     
         <p class="mb-4 fs-5" style="color: #004d40;">
-          Because at the end of the day, a clean car isn’t just about good looks — it’s about protecting your ride and your
-          wallet. Keep your car happy, and it’ll keep you cruising.
+          Scroll down for trusted Ann Arbor listings. Compare services, read real reviews, and book your next wash or detail
+          with confidence.
         </p>
       </div>
     
@@ -1192,7 +1300,7 @@
         z-index: 1;
       "></div>
     </section>
-
+    
     <!-- Appleton Car Wash Ceramic Coating Promo - Red Style -->
     <section class="py-5" style="background-color: #b71c1c; color: #fff;">
       <div class="container">
@@ -1230,6 +1338,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- Back to Michigan Button Start -->
     <div class="container py-4">
