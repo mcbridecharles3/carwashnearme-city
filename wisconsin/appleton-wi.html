@@ -73,54 +73,136 @@
     <!-- Schema Markup for Appleton Car Wash Directory Page start -->
     <script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "CollectionPage",
-          "name": "Appleton Car Wash Directory | Top Local Car Washes & Auto Detailing",
-          "description": "Discover the best car washes and auto detailing services in Appleton, Wisconsin. Trusted local businesses with top reviews and services.",
-          "url": "https://carwashnearme.city/appleton-wi.html",
-          "image": "https://carwashnearme.city/wisconsin/images/appleton-wi.webp",
-          "mainEntity": {
-            "@type": "ItemList",
-            "itemListElement": [
+            "@context": "https://schema.org",
+            "@graph": [
               {
-                "@type": "ListItem",
-                "position": 1,
+                "@type": "CarWash",
+                "name": "Appleton Car Wash",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "2355 W Lynndale Ct",
+                  "addressLocality": "Appleton",
+                  "addressRegion": "WI",
+                  "postalCode": "54914",
+                  "addressCountry": "US"
+                },
+                "telephone": "+1-920-659-5156",
                 "url": "https://appletoncarwash.com",
-                "name": "Appleton Car Wash"
+                "description": "Hand Wash, Interior Detailing, Ceramic Coating, Engine Bay Cleaning. Cars, trucks, SUV, Boats, motorcycles, RV, and aircraft detailing.",
+                "openingHours": "Mo-Sa 07:00-20:00",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.3",
+                  "reviewCount": "100"
+                }
               },
               {
-                "@type": "ListItem",
-                "position": 2,
-                "url": "https://carwashnearme.city/wisconsin/best-wash-car-wash.html",
-                "name": "Best Wash Car Wash"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
+                "@type": "CarWash",
+                "name": "Club Car Wash",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "3040 E College Ave",
+                  "addressLocality": "Appleton",
+                  "addressRegion": "WI",
+                  "postalCode": "54915",
+                  "addressCountry": "US"
+                },
+                "telephone": "+1-833-416-9975",
                 "url": "https://clubcarwash.com/",
-                "name": "Club Car Wash"
+                "description": "Express tunnel wash offering a variety of wash packages as well as free vacuuming.",
+                "openingHours": "Mo-Sa 07:00-20:00",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.2",
+                  "reviewCount": "100"
+                }
               },
               {
-                "@type": "ListItem",
-                "position": 4,
+                "@type": "CarWash",
+                "name": "Tsunami Express Car Wash",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1905 W Wisconsin Ave",
+                  "addressLocality": "Appleton",
+                  "addressRegion": "WI",
+                  "postalCode": "54914",
+                  "addressCountry": "US"
+                },
+                "telephone": "+1-920-659-5156",
                 "url": "https://www.tsunamiexpress.com/",
-                "name": "Tsunami Express Car Wash"
+                "description": "Hand Wash, Interior Detailing, Ceramic Coating, Engine Bay Cleaning",
+                "openingHours": "Mo-Sa 07:00-20:00",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.3",
+                  "reviewCount": "100"
+                }
               },
               {
-                "@type": "ListItem",
-                "position": 5,
-                "url": "https://pdqcarwash.com/",
-                "name": "PDQ Car Wash"
+                "@type": "CarWash",
+                "name": "PDQ Car Wash",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "525 W Northland Ave",
+                  "addressLocality": "Appleton",
+                  "addressRegion": "WI",
+                  "postalCode": "54911",
+                  "addressCountry": "US"
+                },
+                "telephone": "+1-920-738-9222",
+                "url": "https://pdqcarwash.com/pdq-appleton/",
+                "description": "Express tunnel washes and Express Lube service on-site.",
+                "openingHours": "Mo-Sa 08:00-18:00, Su 09:00-17:00",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "3.8",
+                  "reviewCount": "100"
+                }
               },
               {
-                "@type": "ListItem",
-                "position": 6,
-                "url": "https://shinycar.com/",
-                "name": "Shiny Car Car Wash"
+                "@type": "CarWash",
+                "name": "Best Wash Car Wash",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "3195 W Spencer St",
+                  "addressLocality": "Appleton",
+                  "addressRegion": "WI",
+                  "postalCode": "54914",
+                  "addressCountry": "US"
+                },
+                "telephone": "+1-920-540-2723",
+                "url": "https://carwashnearme.city/wisconsin/best-wash-car-wash.html",
+                "description": "Self-Service Bays, Touchless Drive-Thru, Vacuums",
+                "openingHours": "Mo-Su 00:00-23:59",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "3.5",
+                  "reviewCount": "100"
+                }
+              },
+              {
+                "@type": "CarWash",
+                "name": "Wash Monkey Car Wash",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "5145 Integrity Way",
+                  "addressLocality": "Appleton",
+                  "addressRegion": "WI",
+                  "postalCode": "54913",
+                  "addressCountry": "US"
+                },
+                "telephone": "+1-920-364-0599",
+                "url": "https://washmonkeycarwash.com/",
+                "description": "Express Exterior, Tire Shine, Wax Sealant",
+                "openingHours": "Mo-Sa 07:00-20:00",
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.7",
+                  "reviewCount": "100"
+                }
               }
             ]
-          }
-        }
+          }          
     </script>
     <!-- Schema Markup for Appleton Car Wash Directory Page end -->
     <meta name="google-adsense-account" content="ca-pub-4055418125651448">
@@ -293,7 +375,7 @@
                     </div>
                 </div>
 
-                <!-- Featured Car Wash 2 (Full Width) -->
+                <!-- Featured Car Wash 3 (Full Width) -->
                 <div class="col-md-12 mb-4">
                     <div class="pq-fancy-box pq-style-1 border p-4 h-100 bg-light shadow-sm">
                         <h3 class="pq-fancy-box-title mb-1">Club Car Wash</h3>
@@ -327,7 +409,7 @@
                     </div>
                 </div>
 
-                <!-- Featured Car Wash 2 (Full Width) -->
+                <!-- Featured Car Wash 4 (Full Width) -->
                 <div class="col-md-12 mb-4">
                     <div class="pq-fancy-box pq-style-1 border p-4 h-100 bg-light shadow-sm">
                         <h3 class="pq-fancy-box-title mb-1">Club Car Wash</h3>
@@ -358,7 +440,7 @@
                     </div>
                 </div>
 
-                <!-- Featured Car Wash 2 (Full Width) -->
+                <!-- Featured Car Wash 5 (Full Width) -->
                 <div class="col-md-12 mb-4">
                     <div class="pq-fancy-box pq-style-1 border p-4 h-100 bg-light shadow-sm">
                         <h3 class="pq-fancy-box-title mb-1">Club Car Wash</h3>
@@ -391,7 +473,7 @@
                     </div>
                 </div>
 
-                <!-- Featured Car Wash 3 (Full Width) -->
+                <!-- Featured Car Wash 6 (Full Width) -->
                 <div class="col-md-12 mb-4">
                     <div class="pq-fancy-box pq-style-1 border p-4 h-100 bg-light shadow-sm">
                         <h3 class="pq-fancy-box-title mb-1">Tsunami Express Car Wash</h3>
@@ -423,7 +505,7 @@
                     </div>
                 </div>
 
-                <!-- Featured Car Wash 3 (Full Width) -->
+                <!-- Featured Car Wash 7 (Full Width) -->
                 <div class="col-md-12 mb-4">
                     <div class="pq-fancy-box pq-style-1 border p-4 h-100 bg-light shadow-sm">
                         <h3 class="pq-fancy-box-title mb-1">PDQ Car Wash</h3>
@@ -456,7 +538,7 @@
                     </div>
                 </div>
                 
-                <!-- Featured Car Wash 4 (Full Width) -->
+                <!-- Featured Car Wash 8 (Full Width) -->
                 <div class="col-md-12 mb-4">
                     <div class="pq-fancy-box pq-style-1 border p-4 h-100 bg-light shadow-sm">
                         <h3 class="pq-fancy-box-title mb-1">PDQ Car Wash</h3>
@@ -487,7 +569,7 @@
                     </div>
                 </div>
 
-                <!-- Featured Car Wash 5 (Full Width) -->
+                <!-- Featured Car Wash 9 (Full Width) -->
                 <div class="col-md-12 mb-4">
                     <div class="pq-fancy-box pq-style-1 border p-4 h-100 bg-light shadow-sm">
                         <h3 class="pq-fancy-box-title mb-1">PDQ Express Lube</h3>
@@ -518,7 +600,7 @@
                     </div>
                 </div>
 
-                <!-- Featured Car Wash 5 (Full Width) -->
+                <!-- Featured Car Wash 10 (Full Width) -->
                 <div class="col-md-12 mb-4">
                     <div class="pq-fancy-box pq-style-1 border p-4 h-100 bg-light shadow-sm">
                         <h3 class="pq-fancy-box-title mb-1">Shiny Car Car Wash</h3>
@@ -547,7 +629,7 @@
                     </div>
                 </div>
     
-                <!-- Car Wash 1 -->
+                <!-- Car Wash 11 -->
                 <div class="col-md-6 mb-4">
                     <div class="pq-fancy-box pq-style-1 border p-4 h-100">
                         <h3 class="pq-fancy-box-title">Best Wash Car Wash</h3>
@@ -575,7 +657,7 @@
                     </div>
                 </div>
     
-                <!-- Car Wash 2 -->
+                <!-- Car Wash 12 -->
                 <div class="col-md-6 mb-4">
                     <div class="pq-fancy-box pq-style-1 border p-4 h-100">
                         <h3 class="pq-fancy-box-title">Club Car Wash</h3>
@@ -602,10 +684,70 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Car Wash 12 -->
+                <div class="col-md-6 mb-4">
+                    <div class="pq-fancy-box pq-style-1 border p-4 h-100">
+                        <h3 class="pq-fancy-box-title">Wash Monkey Car Wash</h3>
+                        <p><strong>Type:</strong> Tunnel Wash</p>
+                        <p><strong>Address:</strong> 5145 Integrity Way, Appleton, WI 54913</p>
+                        <p><strong>Phone:</strong> <a href="tel:8334169975">(920) 364-0599</a></p>
+                        <p><strong>Hours:</strong> 7 AM - 8PM</p>
+                        <p><strong>Services:</strong> Express Exterior, Tire Shine, Wax Sealant</p>
+                
+                        <!-- Ratings -->
+                        <p><strong>Google Rating:</strong> ⭐⭐⭐⭐☆ (4.7/5)</p>
+                        <p><strong>Yelp Rating:</strong> ⭐⭐☆☆☆ (2/5)</p>
+                
+                        <!-- Links -->
+                        <div class="d-flex flex-wrap gap-3 mt-3">
+                            <a href="https://www.facebook.com/washmonkeycarwash23/" target="_blank"
+                                class="pq-button pq-button-link">Facebook</a>
+                            <a href="https://www.youtube.com/@WashMonkeyCarWash" target="_blank" class="pq-button pq-button-link">YouTube
+                                Video</a>
+                            <a href="https://washmonkeycarwash.com/" target="_blank"
+                                class="pq-button pq-button-link">Website</a>
+                            <a href="https://maps.app.goo.gl/ygEe9nXb56HCuurGA" target="_blank"
+                                class="pq-button pq-button-link">Directions</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
     <!-- Appleton Car Wash Listings Section End -->
+
+    <section class="py-5 bg-light border-top">
+        <div class="container text-center">
+            <h2 class="text-primary mb-4">Car Washes Near Appleton, WI</h2>
+            <p class="lead mb-4">
+                Looking for car washes in nearby cities? Whether you're heading out of Appleton or live close by, here are
+                top-rated locations you can count on:
+            </p>
+            <div class="row justify-content-center">
+                <!-- Fond du Lac -->
+                <div class="col-md-3 col-6 mb-3">
+                    <a href="/wisconsin/fond-du-lac-wi.html" class="btn btn-outline-primary w-100">Fond du Lac, WI</a>
+                </div>
+                <!-- Green Bay -->
+                <div class="col-md-3 col-6 mb-3">
+                    <a href="/wisconsin/green-bay-wi.html" class="btn btn-outline-primary w-100">Green Bay, WI</a>
+                </div>
+                <!-- Manitowoc -->
+                <div class="col-md-3 col-6 mb-3">
+                    <a href="/wisconsin/manitowoc-wi.html" class="btn btn-outline-primary w-100">Manitowoc, WI</a>
+                </div>
+                <!-- Sheboygan -->
+                <div class="col-md-3 col-6 mb-3">
+                    <a href="/wisconsin/sheboygan-wi.html" class="btn btn-outline-primary w-100">Sheboygan, WI</a>
+                </div>
+            </div>
+            <p class="mt-4">
+                🚘 Your car deserves the best—no matter what part of Wisconsin you're in.
+            </p>
+        </div>
+    </section>      
 
     <!-- Appleton Car Wash & Detailing Info Section Start -->
     <section class="py-5 bg-light">
