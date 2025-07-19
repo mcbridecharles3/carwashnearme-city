@@ -76,87 +76,111 @@
 
     <!-- Schema Markup for Ann Arbor Car Wash Directory Page -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "LocalBusiness",
-            "name": "Big M Car Wash",
-            "telephone": "+1-734-994-3988",
-            "url": "https://www.mapquest.com/us/michigan/big-m-car-wash-435570978",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "2151 W Stadium Blvd",
-              "addressLocality": "Ann Arbor",
-              "addressRegion": "MI",
-              "postalCode": "48103",
-              "addressCountry": "US"
-            },
-            "additionalType": "https://schema.org/CarWash"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "#directory-page",
+          "name": "Ann Arbor Car Wash Directory",
+          "description": "Discover top-rated car wash and auto detailing services in Ann Arbor, MI. From express tunnels to mobile detailing, find a car wash near me that keeps your ride shining bright.",
+          "url": "https://carwashnearme.city/michigan/ann-arbor-mi",
+          "mainEntity": [
+            { "@id": "#big-m" },
+            { "@id": "#community-auto" },
+            { "@id": "#mos-detailing" },
+            { "@id": "#victory-lane" },
+            { "@id": "#zax-wash" }
+          ]
+        },
+    
+        {
+          "@type": "CarWash",
+          "@id": "#big-m",
+          "name": "Big M Car Wash",
+          "telephone": "+1-734-994-3988",
+          "url": "https://www.mapquest.com/us/michigan/big-m-car-wash-435570978",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2151 W Stadium Blvd",
+            "addressLocality": "Ann Arbor",
+            "addressRegion": "MI",
+            "postalCode": "48103",
+            "addressCountry": "US"
           },
-          {
-            "@type": "LocalBusiness",
-            "name": "Community Auto Wash",
-            "telephone": "+1-734-769-2395",
-            "url": "https://www.communityautowash.net/",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "1910 S Industrial Hwy",
-              "addressLocality": "Ann Arbor",
-              "addressRegion": "MI",
-              "postalCode": "48104",
-              "addressCountry": "US"
-            },
-            "additionalType": "https://schema.org/CarWash"
+          "description": "Reliable car wash in Ann Arbor offering fast service and affordable prices."
+        },
+    
+        {
+          "@type": "CarWash",
+          "@id": "#community-auto",
+          "name": "Community Auto Wash",
+          "telephone": "+1-734-769-2395",
+          "url": "https://www.communityautowash.net/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1910 S Industrial Hwy",
+            "addressLocality": "Ann Arbor",
+            "addressRegion": "MI",
+            "postalCode": "48104",
+            "addressCountry": "US"
           },
-          {
-            "@type": "LocalBusiness",
-            "name": "Mo’s Auto Detailing",
-            "telephone": "+1-734-592-1032",
-            "url": "https://www.mosautodetailing.com/",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Mobile Service",
-              "addressLocality": "Ann Arbor",
-              "addressRegion": "MI",
-              "addressCountry": "US"
-            },
-            "description": "Mobile detailing service in Ann Arbor offering full interior and exterior cleaning.",
-            "additionalType": "https://schema.org/AutoDetailing"
+          "description": "Locally trusted car wash in Ann Arbor with multiple self-service and automatic options."
+        },
+    
+        {
+          "@type": "AutoDetailing",
+          "@id": "#mos-detailing",
+          "name": "Mo’s Auto Detailing",
+          "telephone": "+1-734-592-1032",
+          "url": "https://www.mosautodetailing.com/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mobile Service",
+            "addressLocality": "Ann Arbor",
+            "addressRegion": "MI",
+            "postalCode": "48104",
+            "addressCountry": "US"
           },
-          {
-            "@type": "LocalBusiness",
-            "name": "Victory Lane Touchless Carwash",
-            "telephone": "+1-734-662-7755",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "1635 Plymouth Rd",
-              "addressLocality": "Ann Arbor",
-              "addressRegion": "MI",
-              "postalCode": "48105",
-              "addressCountry": "US"
-            },
-            "description": "State-of-the-art touchless car wash offering gentle, effective cleaning.",
-            "additionalType": "https://schema.org/CarWash"
+          "description": "Mobile detailing service in Ann Arbor offering deep interior cleans, exterior polishing, ceramic coatings, and more."
+        },
+    
+        {
+          "@type": "CarWash",
+          "@id": "#victory-lane",
+          "name": "Victory Lane Touchless Carwash",
+          "telephone": "+1-734-662-7755",
+          "url": "https://www.victorylane.net/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1635 Plymouth Rd",
+            "addressLocality": "Ann Arbor",
+            "addressRegion": "MI",
+            "postalCode": "48105",
+            "addressCountry": "US"
           },
-          {
-            "@type": "LocalBusiness",
-            "name": "Zax Auto Wash",
-            "telephone": "+1-313-751-3318",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "4881 Washtenaw Ave",
-              "addressLocality": "Ann Arbor",
-              "addressRegion": "MI",
-              "postalCode": "48108",
-              "addressCountry": "US"
-            },
-            "description": "Fast and affordable car wash service in Ann Arbor.",
-            "additionalType": "https://schema.org/CarWash"
-          }
-        ]
-      }
-      </script>
+          "description": "Touchless car wash in Ann Arbor using gentle high-pressure technology to clean without scratching."
+        },
+    
+        {
+          "@type": "CarWash",
+          "@id": "#zax-wash",
+          "name": "Zax Auto Wash",
+          "telephone": "+1-313-751-3318",
+          "url": "https://www.zaxwash.com/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "4881 Washtenaw Ave",
+            "addressLocality": "Ann Arbor",
+            "addressRegion": "MI",
+            "postalCode": "48108",
+            "addressCountry": "US"
+          },
+          "description": "Fast and affordable express car wash in Ann Arbor offering unlimited plans and free vacuums."
+        }
+      ]
+    }
+    </script>
   
       
     
